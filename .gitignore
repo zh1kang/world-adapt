@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Run outputs stay local. results/ holds only the published per-task outcomes and judge labels.
+/outputs/
+/runs
+/dist/

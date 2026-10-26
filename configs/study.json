@@ -1,0 +1,144 @@
+{
+  "name": "six-environment-adaptation",
+  "specification": "README.md",
+  "launch_approved": false,
+  "protocol": {
+    "seed_blocks": [
+      3000
+    ],
+    "runner_args": {
+      "adaptation_tasks": 8,
+      "heldout_per_tier": 2,
+      "infra_retries": 2
+    }
+  },
+  "conditions": {
+    "accurate-predictor-saved-notebook": {
+      "predictor": "identity",
+      "memory": "preserve"
+    },
+    "accurate-predictor-reset-notebook": {
+      "predictor": "identity",
+      "memory": "reset"
+    },
+    "faulty-predictor-saved-notebook": {
+      "predictor": "perturbed",
+      "memory": "preserve"
+    },
+    "faulty-predictor-reset-notebook": {
+      "predictor": "perturbed",
+      "memory": "reset"
+    }
+  },
+  "budgets": {
+    "max_chunk": 8,
+    "max_turns": 512,
+    "max_malformed": 5,
+    "max_task_tokens": 4000000,
+    "max_task_seconds": 7200,
+    "real_factor": 3.0,
+    "prediction_factor": 2.0,
+    "notebook_tokens": 2000,
+    "notebook_max_tokens": 200000,
+    "notebook_max_seconds": 900,
+    "notebook_max_completion_tokens": 32768,
+    "max_context_tokens": 80000,
+    "writer_context_tokens": 64000,
+    "writer_evidence_tokens": 56000,
+    "keep_recent_turns": 2,
+    "max_completion_tokens": 32768,
+    "stream": true,
+    "require_usage": true,
+    "reasoning_effort": "low"
+  },
+  "environments": {
+    "depot": {
+      "primary_profile": "cargo_and_stacks",
+      "runner_args": {
+        "env_opt": [
+          "curriculum=structural-v2",
+          "exclude_fingerprints=faaec5cea306b4099cd8a43d968a3d6f9b390af5ca4f20545f0b9d17d9bba30d"
+        ]
+      }
+    },
+    "portalmaze": {
+      "primary_profile": "door_and_portal_prerequisite",
+      "runner_args": {
+        "env_opt": [
+          "curriculum=extended"
+        ]
+      }
+    },
+    "patrol": {
+      "primary_profile": "adjacent_capture",
+      "runner_args": {
+        "env_opt": [
+          "curriculum=calibration",
+          "calibration_max_attempts=24000"
+        ]
+      }
+    },
+    "switchboard": {
+      "primary_profile": "breaker_retarget_enabled_only",
+      "runner_args": {
+        "env_opt": [
+          "curriculum=calibration",
+          "tier=mixed",
+          "max_expansions=200000"
+        ]
+      }
+    },
+    "iceslide": {
+      "primary_profile": "launch_outcomes",
+      "runner_args": {
+        "env_opt": [
+          "curriculum=calibration"
+        ]
+      }
+    },
+    "pusht": {
+      "primary_profile": "target_gain",
+      "runner_args": {
+        "env_opt": [
+          "curriculum=seeded-v1",
+          "budget=40"
+        ]
+      }
+    }
+  },
+  "agents": {
+    "example": {
+      "config": "configs/agents/example.json",
+      "backend": "sail"
+    }
+  },
+  "sources": {},
+  "admission": {
+    "required": [
+      "deployment identity and context headroom",
+      "valid execution and accounting",
+      "empty reset notes",
+      "retained-note lineage",
+      "independent held-out branches",
+      "exact public archive and explicit omissions"
+    ],
+    "forbidden": [
+      "minimum success rate",
+      "positive memory benefit",
+      "positive perturbation penalty"
+    ]
+  },
+  "analysis": {
+    "primary": "Paired held-out success: faulty predictor + saved notebook minus faulty predictor + reset notebook",
+    "secondary": [
+      "Accurate predictor + saved notebook minus accurate predictor + reset notebook",
+      "memory-by-predictor interaction",
+      "resource use and infrastructure failures",
+      "public mismatch exposure",
+      "writer evidence delivery and notebook support",
+      "later application with explicit evidence and uncertainty"
+    ],
+    "pooling": "Report all enrolled models, including floors. Do not infer recognition, avoidance, or correction from success or tool-call counts alone."
+  },
+  "status": "Template for a new local study. Prepare a separate study with `python -m world_adapt.runner.local prepare`; source pins are written then."
+}

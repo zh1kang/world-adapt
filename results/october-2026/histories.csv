@@ -1,0 +1,217 @@
+model,model_name,environment,condition,run_id,tasks_scored,adaptation_solved,heldout_scored,heldout_solved
+deepseek41,DeepSeek V4.1 Flash,depot,accurate-predictor-reset-notebook,20261021-182557-final-eight-model-2026-10-21-deepseek41-depot-UR-s3000,14,8,6,6
+deepseek41,DeepSeek V4.1 Flash,depot,accurate-predictor-saved-notebook,20261025-045426-overnight-rerun-2026-10-24-deepseek41-depot-accurate-predictor-saved-notebook-s3000,14,8,6,6
+deepseek41,DeepSeek V4.1 Flash,depot,faulty-predictor-reset-notebook,20261021-182603-final-eight-model-2026-10-21-deepseek41-depot-PR-s3000,14,8,6,6
+deepseek41,DeepSeek V4.1 Flash,depot,faulty-predictor-saved-notebook,20261025-045434-overnight-rerun-2026-10-24-deepseek41-depot-faulty-predictor-saved-notebook-s3000,14,8,6,6
+deepseek41,DeepSeek V4.1 Flash,iceslide,accurate-predictor-reset-notebook,20261021-182727-final-eight-model-2026-10-21-deepseek41-iceslide-UR-s3000,14,8,6,4
+deepseek41,DeepSeek V4.1 Flash,iceslide,accurate-predictor-saved-notebook,20261021-182727-final-eight-model-2026-10-21-deepseek41-iceslide-UM-s3000,14,7,6,5
+deepseek41,DeepSeek V4.1 Flash,iceslide,faulty-predictor-reset-notebook,20261021-182728-final-eight-model-2026-10-21-deepseek41-iceslide-PR-s3000,14,7,6,5
+deepseek41,DeepSeek V4.1 Flash,iceslide,faulty-predictor-saved-notebook,20261021-182728-final-eight-model-2026-10-21-deepseek41-iceslide-PM-s3000,14,8,6,5
+deepseek41,DeepSeek V4.1 Flash,patrol,accurate-predictor-reset-notebook,20261021-182707-final-eight-model-2026-10-21-deepseek41-patrol-UR-s3000,14,8,6,5
+deepseek41,DeepSeek V4.1 Flash,patrol,accurate-predictor-saved-notebook,20261025-045534-overnight-rerun-2026-10-24-deepseek41-patrol-accurate-predictor-saved-notebook-s3000,14,8,6,6
+deepseek41,DeepSeek V4.1 Flash,patrol,faulty-predictor-reset-notebook,20261025-045545-overnight-rerun-2026-10-24-deepseek41-patrol-faulty-predictor-reset-notebook-s3000,14,7,6,6
+deepseek41,DeepSeek V4.1 Flash,patrol,faulty-predictor-saved-notebook,20261021-182712-final-eight-model-2026-10-21-deepseek41-patrol-PM-s3000,14,6,6,5
+deepseek41,DeepSeek V4.1 Flash,portalmaze,accurate-predictor-reset-notebook,20261025-045512-overnight-rerun-2026-10-24-deepseek41-portalmaze-accurate-predictor-reset-notebook-s3000,14,7,6,6
+deepseek41,DeepSeek V4.1 Flash,portalmaze,accurate-predictor-saved-notebook,20261025-045509-overnight-rerun-2026-10-24-deepseek41-portalmaze-accurate-predictor-saved-notebook-s3000,14,8,6,6
+deepseek41,DeepSeek V4.1 Flash,portalmaze,faulty-predictor-reset-notebook,20261025-045539-overnight-rerun-2026-10-24-deepseek41-portalmaze-faulty-predictor-reset-notebook-s3000,14,7,6,6
+deepseek41,DeepSeek V4.1 Flash,portalmaze,faulty-predictor-saved-notebook,20261025-045536-overnight-rerun-2026-10-24-deepseek41-portalmaze-faulty-predictor-saved-notebook-s3000,14,6,6,5
+deepseek41,DeepSeek V4.1 Flash,pusht,accurate-predictor-reset-notebook,20261022-175617-final-eight-model-2026-10-21-deepseek41-pusht-UR-s3000,14,6,6,5
+deepseek41,DeepSeek V4.1 Flash,pusht,accurate-predictor-saved-notebook,20261022-175617-final-eight-model-2026-10-21-deepseek41-pusht-UM-s3000,14,8,6,5
+deepseek41,DeepSeek V4.1 Flash,pusht,faulty-predictor-reset-notebook,20261022-175618-final-eight-model-2026-10-21-deepseek41-pusht-PR-s3000,14,4,6,2
+deepseek41,DeepSeek V4.1 Flash,pusht,faulty-predictor-saved-notebook,20261022-175616-final-eight-model-2026-10-21-deepseek41-pusht-PM-s3000,14,4,6,4
+deepseek41,DeepSeek V4.1 Flash,switchboard,accurate-predictor-reset-notebook,20261021-182639-final-eight-model-2026-10-21-deepseek41-switchboard-UR-s3000,14,8,6,6
+deepseek41,DeepSeek V4.1 Flash,switchboard,accurate-predictor-saved-notebook,20261021-182635-final-eight-model-2026-10-21-deepseek41-switchboard-UM-s3000,14,8,6,6
+deepseek41,DeepSeek V4.1 Flash,switchboard,faulty-predictor-reset-notebook,20261021-182640-final-eight-model-2026-10-21-deepseek41-switchboard-PR-s3000,14,8,6,5
+deepseek41,DeepSeek V4.1 Flash,switchboard,faulty-predictor-saved-notebook,20261021-182641-final-eight-model-2026-10-21-deepseek41-switchboard-PM-s3000,14,8,6,5
+gemma431b,Gemma 4 31B,depot,accurate-predictor-reset-notebook,20261025-045432-overnight-rerun-2026-10-24-gemma431b-depot-accurate-predictor-reset-notebook-s3000,14,8,6,6
+gemma431b,Gemma 4 31B,depot,accurate-predictor-saved-notebook,20261025-045428-overnight-rerun-2026-10-24-gemma431b-depot-accurate-predictor-saved-notebook-s3000,14,8,6,6
+gemma431b,Gemma 4 31B,depot,faulty-predictor-reset-notebook,20261025-045442-overnight-rerun-2026-10-24-gemma431b-depot-faulty-predictor-reset-notebook-s3000,14,7,6,5
+gemma431b,Gemma 4 31B,depot,faulty-predictor-saved-notebook,20261025-045435-overnight-rerun-2026-10-24-gemma431b-depot-faulty-predictor-saved-notebook-s3000,14,7,6,5
+gemma431b,Gemma 4 31B,iceslide,accurate-predictor-reset-notebook,20261025-051244-overnight-rerun-2026-10-24-gemma431b-iceslide-accurate-predictor-reset-notebook-s3000,14,5,6,3
+gemma431b,Gemma 4 31B,iceslide,accurate-predictor-saved-notebook,20261025-050442-overnight-rerun-2026-10-24-gemma431b-iceslide-accurate-predictor-saved-notebook-s3000,14,4,6,2
+gemma431b,Gemma 4 31B,iceslide,faulty-predictor-reset-notebook,20261025-053524-overnight-rerun-2026-10-24-gemma431b-iceslide-faulty-predictor-reset-notebook-s3000,14,4,6,4
+gemma431b,Gemma 4 31B,iceslide,faulty-predictor-saved-notebook,20261025-053350-overnight-rerun-2026-10-24-gemma431b-iceslide-faulty-predictor-saved-notebook-s3000,14,4,6,3
+gemma431b,Gemma 4 31B,patrol,accurate-predictor-reset-notebook,20261025-045539-overnight-rerun-2026-10-24-gemma431b-patrol-accurate-predictor-reset-notebook-s3000,14,2,6,0
+gemma431b,Gemma 4 31B,patrol,accurate-predictor-saved-notebook,20261025-045538-overnight-rerun-2026-10-24-gemma431b-patrol-accurate-predictor-saved-notebook-s3000,14,2,6,0
+gemma431b,Gemma 4 31B,patrol,faulty-predictor-reset-notebook,20261025-045544-overnight-rerun-2026-10-24-gemma431b-patrol-faulty-predictor-reset-notebook-s3000,14,1,6,0
+gemma431b,Gemma 4 31B,patrol,faulty-predictor-saved-notebook,20261025-045538-overnight-rerun-2026-10-24-gemma431b-patrol-faulty-predictor-saved-notebook-s3000,14,0,6,0
+gemma431b,Gemma 4 31B,portalmaze,accurate-predictor-reset-notebook,20261025-045524-overnight-rerun-2026-10-24-gemma431b-portalmaze-accurate-predictor-reset-notebook-s3000,14,4,6,3
+gemma431b,Gemma 4 31B,portalmaze,accurate-predictor-saved-notebook,20261025-045508-overnight-rerun-2026-10-24-gemma431b-portalmaze-accurate-predictor-saved-notebook-s3000,14,3,6,3
+gemma431b,Gemma 4 31B,portalmaze,faulty-predictor-reset-notebook,20261025-045539-overnight-rerun-2026-10-24-gemma431b-portalmaze-faulty-predictor-reset-notebook-s3000,14,4,6,1
+gemma431b,Gemma 4 31B,portalmaze,faulty-predictor-saved-notebook,20261025-045537-overnight-rerun-2026-10-24-gemma431b-portalmaze-faulty-predictor-saved-notebook-s3000,14,3,6,3
+gemma431b,Gemma 4 31B,pusht,accurate-predictor-reset-notebook,20261025-054719-overnight-rerun-2026-10-24-gemma431b-pusht-accurate-predictor-reset-notebook-s3000,14,0,6,0
+gemma431b,Gemma 4 31B,pusht,accurate-predictor-saved-notebook,20261025-054707-overnight-rerun-2026-10-24-gemma431b-pusht-accurate-predictor-saved-notebook-s3000,14,0,6,0
+gemma431b,Gemma 4 31B,pusht,faulty-predictor-reset-notebook,20261025-054831-overnight-rerun-2026-10-24-gemma431b-pusht-faulty-predictor-reset-notebook-s3000,14,0,6,0
+gemma431b,Gemma 4 31B,pusht,faulty-predictor-saved-notebook,20261025-054830-overnight-rerun-2026-10-24-gemma431b-pusht-faulty-predictor-saved-notebook-s3000,14,0,6,0
+gemma431b,Gemma 4 31B,switchboard,accurate-predictor-reset-notebook,20261025-050436-overnight-rerun-2026-10-24-gemma431b-switchboard-accurate-predictor-reset-notebook-s3000,14,7,6,3
+gemma431b,Gemma 4 31B,switchboard,accurate-predictor-saved-notebook,20261025-050436-overnight-rerun-2026-10-24-gemma431b-switchboard-accurate-predictor-saved-notebook-s3000,14,6,6,5
+gemma431b,Gemma 4 31B,switchboard,faulty-predictor-reset-notebook,20261021-182644-final-eight-model-2026-10-21-gemma431b-switchboard-PR-s3000,14,6,6,4
+gemma431b,Gemma 4 31B,switchboard,faulty-predictor-saved-notebook,20261025-050437-overnight-rerun-2026-10-24-gemma431b-switchboard-faulty-predictor-saved-notebook-s3000,14,5,6,3
+glm53flash,GLM-5.3-Flash,depot,accurate-predictor-reset-notebook,20261025-045429-overnight-rerun-2026-10-24-glm53flash-depot-accurate-predictor-reset-notebook-s3000,14,7,6,6
+glm53flash,GLM-5.3-Flash,depot,accurate-predictor-saved-notebook,20261025-045426-overnight-rerun-2026-10-24-glm53flash-depot-accurate-predictor-saved-notebook-s3000,14,8,6,6
+glm53flash,GLM-5.3-Flash,depot,faulty-predictor-reset-notebook,20261025-045438-overnight-rerun-2026-10-24-glm53flash-depot-faulty-predictor-reset-notebook-s3000,14,7,6,6
+glm53flash,GLM-5.3-Flash,depot,faulty-predictor-saved-notebook,20261025-045435-overnight-rerun-2026-10-24-glm53flash-depot-faulty-predictor-saved-notebook-s3000,14,8,6,6
+glm53flash,GLM-5.3-Flash,iceslide,accurate-predictor-reset-notebook,20261021-182727-final-eight-model-2026-10-21-glm53flash-iceslide-UR-s3000,14,6,6,5
+glm53flash,GLM-5.3-Flash,iceslide,accurate-predictor-saved-notebook,20261025-050442-overnight-rerun-2026-10-24-glm53flash-iceslide-accurate-predictor-saved-notebook-s3000,14,4,6,5
+glm53flash,GLM-5.3-Flash,iceslide,faulty-predictor-reset-notebook,20261021-182730-final-eight-model-2026-10-21-glm53flash-iceslide-PR-s3000,14,5,6,2
+glm53flash,GLM-5.3-Flash,iceslide,faulty-predictor-saved-notebook,20261025-051913-overnight-rerun-2026-10-24-glm53flash-iceslide-faulty-predictor-saved-notebook-s3000,14,6,6,5
+glm53flash,GLM-5.3-Flash,patrol,accurate-predictor-reset-notebook,20261025-045538-overnight-rerun-2026-10-24-glm53flash-patrol-accurate-predictor-reset-notebook-s3000,14,2,6,2
+glm53flash,GLM-5.3-Flash,patrol,accurate-predictor-saved-notebook,20261025-045534-overnight-rerun-2026-10-24-glm53flash-patrol-accurate-predictor-saved-notebook-s3000,14,5,6,4
+glm53flash,GLM-5.3-Flash,patrol,faulty-predictor-reset-notebook,20261021-182715-final-eight-model-2026-10-21-glm53flash-patrol-PR-s3000,14,0,6,3
+glm53flash,GLM-5.3-Flash,patrol,faulty-predictor-saved-notebook,20261025-045538-overnight-rerun-2026-10-24-glm53flash-patrol-faulty-predictor-saved-notebook-s3000,14,4,6,3
+glm53flash,GLM-5.3-Flash,portalmaze,accurate-predictor-reset-notebook,20261025-045534-overnight-rerun-2026-10-24-glm53flash-portalmaze-accurate-predictor-reset-notebook-s3000,14,5,6,5
+glm53flash,GLM-5.3-Flash,portalmaze,accurate-predictor-saved-notebook,20261025-045511-overnight-rerun-2026-10-24-glm53flash-portalmaze-accurate-predictor-saved-notebook-s3000,14,6,6,5
+glm53flash,GLM-5.3-Flash,portalmaze,faulty-predictor-reset-notebook,20261021-182738-final-eight-model-2026-10-21-glm53flash-portalmaze-PR-s3000,14,4,6,5
+glm53flash,GLM-5.3-Flash,portalmaze,faulty-predictor-saved-notebook,20261025-045538-overnight-rerun-2026-10-24-glm53flash-portalmaze-faulty-predictor-saved-notebook-s3000,14,4,6,6
+glm53flash,GLM-5.3-Flash,pusht,accurate-predictor-reset-notebook,20261022-175618-final-eight-model-2026-10-21-glm53flash-pusht-UR-s3000,14,2,6,2
+glm53flash,GLM-5.3-Flash,pusht,accurate-predictor-saved-notebook,20261025-054601-overnight-rerun-2026-10-24-glm53flash-pusht-accurate-predictor-saved-notebook-s3000,14,3,6,4
+glm53flash,GLM-5.3-Flash,pusht,faulty-predictor-reset-notebook,20261025-054831-overnight-rerun-2026-10-24-glm53flash-pusht-faulty-predictor-reset-notebook-s3000,14,3,6,0
+glm53flash,GLM-5.3-Flash,pusht,faulty-predictor-saved-notebook,20261022-175617-final-eight-model-2026-10-21-glm53flash-pusht-PM-s3000,14,2,6,0
+glm53flash,GLM-5.3-Flash,switchboard,accurate-predictor-reset-notebook,20261021-182638-final-eight-model-2026-10-21-glm53flash-switchboard-UR-s3000,14,3,6,0
+glm53flash,GLM-5.3-Flash,switchboard,accurate-predictor-saved-notebook,20261021-182635-final-eight-model-2026-10-21-glm53flash-switchboard-UM-s3000,14,5,6,2
+glm53flash,GLM-5.3-Flash,switchboard,faulty-predictor-reset-notebook,20261021-182644-final-eight-model-2026-10-21-glm53flash-switchboard-PR-s3000,14,3,6,1
+glm53flash,GLM-5.3-Flash,switchboard,faulty-predictor-saved-notebook,20261021-182644-final-eight-model-2026-10-21-glm53flash-switchboard-PM-s3000,14,5,6,2
+gptoss120b,GPT-OSS-120B,depot,accurate-predictor-reset-notebook,20261021-182557-final-eight-model-2026-10-21-gptoss120b-depot-UR-s3000,14,0,6,1
+gptoss120b,GPT-OSS-120B,depot,accurate-predictor-saved-notebook,20261025-045427-overnight-rerun-2026-10-24-gptoss120b-depot-accurate-predictor-saved-notebook-s3000,14,0,6,1
+gptoss120b,GPT-OSS-120B,depot,faulty-predictor-reset-notebook,20261025-045438-overnight-rerun-2026-10-24-gptoss120b-depot-faulty-predictor-reset-notebook-s3000,14,0,6,0
+gptoss120b,GPT-OSS-120B,depot,faulty-predictor-saved-notebook,20261021-182559-final-eight-model-2026-10-21-gptoss120b-depot-PM-s3000,14,1,6,0
+gptoss120b,GPT-OSS-120B,iceslide,accurate-predictor-reset-notebook,20261021-182727-final-eight-model-2026-10-21-gptoss120b-iceslide-UR-s3000,14,1,6,1
+gptoss120b,GPT-OSS-120B,iceslide,accurate-predictor-saved-notebook,20261021-182727-final-eight-model-2026-10-21-gptoss120b-iceslide-UM-s3000,14,2,6,2
+gptoss120b,GPT-OSS-120B,iceslide,faulty-predictor-reset-notebook,20261021-182729-final-eight-model-2026-10-21-gptoss120b-iceslide-PR-s3000,14,0,6,2
+gptoss120b,GPT-OSS-120B,iceslide,faulty-predictor-saved-notebook,20261021-182729-final-eight-model-2026-10-21-gptoss120b-iceslide-PM-s3000,14,1,6,1
+gptoss120b,GPT-OSS-120B,patrol,accurate-predictor-reset-notebook,20261021-182714-final-eight-model-2026-10-21-gptoss120b-patrol-UR-s3000,14,0,6,0
+gptoss120b,GPT-OSS-120B,patrol,accurate-predictor-saved-notebook,20261021-182705-final-eight-model-2026-10-21-gptoss120b-patrol-UM-s3000,14,0,6,0
+gptoss120b,GPT-OSS-120B,patrol,faulty-predictor-reset-notebook,20261021-182712-final-eight-model-2026-10-21-gptoss120b-patrol-PR-s3000,14,0,6,0
+gptoss120b,GPT-OSS-120B,patrol,faulty-predictor-saved-notebook,20261021-182712-final-eight-model-2026-10-21-gptoss120b-patrol-PM-s3000,14,0,6,0
+gptoss120b,GPT-OSS-120B,portalmaze,accurate-predictor-reset-notebook,20261025-045524-overnight-rerun-2026-10-24-gptoss120b-portalmaze-accurate-predictor-reset-notebook-s3000,14,1,6,0
+gptoss120b,GPT-OSS-120B,portalmaze,accurate-predictor-saved-notebook,20261021-182725-final-eight-model-2026-10-21-gptoss120b-portalmaze-UM-s3000,14,1,6,0
+gptoss120b,GPT-OSS-120B,portalmaze,faulty-predictor-reset-notebook,20261021-182736-final-eight-model-2026-10-21-gptoss120b-portalmaze-PR-s3000,14,1,6,0
+gptoss120b,GPT-OSS-120B,portalmaze,faulty-predictor-saved-notebook,20261021-182735-final-eight-model-2026-10-21-gptoss120b-portalmaze-PM-s3000,14,2,6,1
+gptoss120b,GPT-OSS-120B,pusht,accurate-predictor-reset-notebook,20261022-175617-final-eight-model-2026-10-21-gptoss120b-pusht-UR-s3000,14,0,6,0
+gptoss120b,GPT-OSS-120B,pusht,accurate-predictor-saved-notebook,20261022-175617-final-eight-model-2026-10-21-gptoss120b-pusht-UM-s3000,14,0,6,0
+gptoss120b,GPT-OSS-120B,pusht,faulty-predictor-reset-notebook,20261022-175617-final-eight-model-2026-10-21-gptoss120b-pusht-PR-s3000,14,0,6,0
+gptoss120b,GPT-OSS-120B,pusht,faulty-predictor-saved-notebook,20261022-175618-final-eight-model-2026-10-21-gptoss120b-pusht-PM-s3000,14,0,6,0
+gptoss120b,GPT-OSS-120B,switchboard,accurate-predictor-reset-notebook,20261021-182643-final-eight-model-2026-10-21-gptoss120b-switchboard-UR-s3000,14,2,6,0
+gptoss120b,GPT-OSS-120B,switchboard,accurate-predictor-saved-notebook,20261021-182636-final-eight-model-2026-10-21-gptoss120b-switchboard-UM-s3000,14,1,6,0
+gptoss120b,GPT-OSS-120B,switchboard,faulty-predictor-reset-notebook,20261021-182644-final-eight-model-2026-10-21-gptoss120b-switchboard-PR-s3000,14,1,6,1
+gptoss120b,GPT-OSS-120B,switchboard,faulty-predictor-saved-notebook,20261021-182642-final-eight-model-2026-10-21-gptoss120b-switchboard-PM-s3000,14,0,6,1
+inkling,Inkling,depot,accurate-predictor-reset-notebook,20261025-091619-overnight-rerun-2026-10-24-inkling-depot-accurate-predictor-reset-notebook-s3000,14,0,6,0
+inkling,Inkling,depot,accurate-predictor-saved-notebook,20261025-091618-overnight-rerun-2026-10-24-inkling-depot-accurate-predictor-saved-notebook-s3000,14,0,6,0
+inkling,Inkling,depot,faulty-predictor-reset-notebook,20261025-091620-overnight-rerun-2026-10-24-inkling-depot-faulty-predictor-reset-notebook-s3000,14,0,6,0
+inkling,Inkling,depot,faulty-predictor-saved-notebook,20261025-091619-overnight-rerun-2026-10-24-inkling-depot-faulty-predictor-saved-notebook-s3000,14,0,6,0
+inkling,Inkling,iceslide,accurate-predictor-reset-notebook,20261025-091648-overnight-rerun-2026-10-24-inkling-iceslide-accurate-predictor-reset-notebook-s3000,14,0,6,0
+inkling,Inkling,iceslide,accurate-predictor-saved-notebook,20261025-091648-overnight-rerun-2026-10-24-inkling-iceslide-accurate-predictor-saved-notebook-s3000,14,1,6,0
+inkling,Inkling,iceslide,faulty-predictor-reset-notebook,20261025-091647-overnight-rerun-2026-10-24-inkling-iceslide-faulty-predictor-reset-notebook-s3000,14,1,6,0
+inkling,Inkling,iceslide,faulty-predictor-saved-notebook,20261025-091647-overnight-rerun-2026-10-24-inkling-iceslide-faulty-predictor-saved-notebook-s3000,14,0,6,0
+inkling,Inkling,patrol,accurate-predictor-reset-notebook,20261025-091633-overnight-rerun-2026-10-24-inkling-patrol-accurate-predictor-reset-notebook-s3000,14,0,6,0
+inkling,Inkling,patrol,accurate-predictor-saved-notebook,20261025-091633-overnight-rerun-2026-10-24-inkling-patrol-accurate-predictor-saved-notebook-s3000,14,0,6,0
+inkling,Inkling,patrol,faulty-predictor-reset-notebook,20261025-091644-overnight-rerun-2026-10-24-inkling-patrol-faulty-predictor-reset-notebook-s3000,14,0,6,0
+inkling,Inkling,patrol,faulty-predictor-saved-notebook,20261025-091644-overnight-rerun-2026-10-24-inkling-patrol-faulty-predictor-saved-notebook-s3000,14,0,6,0
+inkling,Inkling,portalmaze,accurate-predictor-reset-notebook,20261025-091640-overnight-rerun-2026-10-24-inkling-portalmaze-accurate-predictor-reset-notebook-s3000,14,1,6,0
+inkling,Inkling,portalmaze,accurate-predictor-saved-notebook,20261025-091637-overnight-rerun-2026-10-24-inkling-portalmaze-accurate-predictor-saved-notebook-s3000,14,0,6,0
+inkling,Inkling,portalmaze,faulty-predictor-reset-notebook,20261025-091644-overnight-rerun-2026-10-24-inkling-portalmaze-faulty-predictor-reset-notebook-s3000,14,0,6,0
+inkling,Inkling,portalmaze,faulty-predictor-saved-notebook,20261025-091644-overnight-rerun-2026-10-24-inkling-portalmaze-faulty-predictor-saved-notebook-s3000,14,0,6,0
+inkling,Inkling,pusht,accurate-predictor-reset-notebook,20261025-091648-overnight-rerun-2026-10-24-inkling-pusht-accurate-predictor-reset-notebook-s3000,14,0,6,0
+inkling,Inkling,pusht,accurate-predictor-saved-notebook,20261025-091648-overnight-rerun-2026-10-24-inkling-pusht-accurate-predictor-saved-notebook-s3000,14,0,6,0
+inkling,Inkling,pusht,faulty-predictor-reset-notebook,20261025-091648-overnight-rerun-2026-10-24-inkling-pusht-faulty-predictor-reset-notebook-s3000,14,0,6,0
+inkling,Inkling,pusht,faulty-predictor-saved-notebook,20261025-091648-overnight-rerun-2026-10-24-inkling-pusht-faulty-predictor-saved-notebook-s3000,14,0,6,0
+inkling,Inkling,switchboard,accurate-predictor-reset-notebook,20261025-091637-overnight-rerun-2026-10-24-inkling-switchboard-accurate-predictor-reset-notebook-s3000,14,0,6,0
+inkling,Inkling,switchboard,accurate-predictor-saved-notebook,20261025-091637-overnight-rerun-2026-10-24-inkling-switchboard-accurate-predictor-saved-notebook-s3000,14,1,6,0
+inkling,Inkling,switchboard,faulty-predictor-reset-notebook,20261025-091642-overnight-rerun-2026-10-24-inkling-switchboard-faulty-predictor-reset-notebook-s3000,14,1,6,0
+inkling,Inkling,switchboard,faulty-predictor-saved-notebook,20261025-091637-overnight-rerun-2026-10-24-inkling-switchboard-faulty-predictor-saved-notebook-s3000,14,1,6,0
+kimi26,Kimi K2.6,depot,accurate-predictor-reset-notebook,20261025-045432-overnight-rerun-2026-10-24-kimi26-depot-accurate-predictor-reset-notebook-s3000,14,8,6,6
+kimi26,Kimi K2.6,depot,accurate-predictor-saved-notebook,20261025-045428-overnight-rerun-2026-10-24-kimi26-depot-accurate-predictor-saved-notebook-s3000,14,8,6,6
+kimi26,Kimi K2.6,depot,faulty-predictor-reset-notebook,20261021-182607-final-eight-model-2026-10-21-kimi26-depot-PR-s3000,14,8,6,6
+kimi26,Kimi K2.6,depot,faulty-predictor-saved-notebook,20261025-045438-overnight-rerun-2026-10-24-kimi26-depot-faulty-predictor-saved-notebook-s3000,14,8,6,6
+kimi26,Kimi K2.6,iceslide,accurate-predictor-reset-notebook,20261021-182728-final-eight-model-2026-10-21-kimi26-iceslide-UR-s3000,14,5,6,4
+kimi26,Kimi K2.6,iceslide,accurate-predictor-saved-notebook,20261021-182727-final-eight-model-2026-10-21-kimi26-iceslide-UM-s3000,14,7,6,5
+kimi26,Kimi K2.6,iceslide,faulty-predictor-reset-notebook,20261025-053931-overnight-rerun-2026-10-24-kimi26-iceslide-faulty-predictor-reset-notebook-s3000,14,5,6,5
+kimi26,Kimi K2.6,iceslide,faulty-predictor-saved-notebook,20261021-182729-final-eight-model-2026-10-21-kimi26-iceslide-PM-s3000,14,5,6,4
+kimi26,Kimi K2.6,patrol,accurate-predictor-reset-notebook,20261025-045542-overnight-rerun-2026-10-24-kimi26-patrol-accurate-predictor-reset-notebook-s3000,14,6,6,2
+kimi26,Kimi K2.6,patrol,accurate-predictor-saved-notebook,20261025-045534-overnight-rerun-2026-10-24-kimi26-patrol-accurate-predictor-saved-notebook-s3000,14,5,6,6
+kimi26,Kimi K2.6,patrol,faulty-predictor-reset-notebook,20261025-050441-overnight-rerun-2026-10-24-kimi26-patrol-faulty-predictor-reset-notebook-s3000,14,4,6,3
+kimi26,Kimi K2.6,patrol,faulty-predictor-saved-notebook,20261025-045541-overnight-rerun-2026-10-24-kimi26-patrol-faulty-predictor-saved-notebook-s3000,10,6,2,1
+kimi26,Kimi K2.6,portalmaze,accurate-predictor-reset-notebook,20261025-045534-overnight-rerun-2026-10-24-kimi26-portalmaze-accurate-predictor-reset-notebook-s3000,14,7,6,6
+kimi26,Kimi K2.6,portalmaze,accurate-predictor-saved-notebook,20261025-045509-overnight-rerun-2026-10-24-kimi26-portalmaze-accurate-predictor-saved-notebook-s3000,14,7,6,6
+kimi26,Kimi K2.6,portalmaze,faulty-predictor-reset-notebook,20261021-182738-final-eight-model-2026-10-21-kimi26-portalmaze-PR-s3000,14,6,6,6
+kimi26,Kimi K2.6,portalmaze,faulty-predictor-saved-notebook,20261025-045538-overnight-rerun-2026-10-24-kimi26-portalmaze-faulty-predictor-saved-notebook-s3000,14,6,6,6
+kimi26,Kimi K2.6,pusht,accurate-predictor-reset-notebook,20261025-054830-overnight-rerun-2026-10-24-kimi26-pusht-accurate-predictor-reset-notebook-s3000,14,3,6,1
+kimi26,Kimi K2.6,pusht,accurate-predictor-saved-notebook,20261022-175617-final-eight-model-2026-10-21-kimi26-pusht-UM-s3000,14,2,6,1
+kimi26,Kimi K2.6,pusht,faulty-predictor-reset-notebook,20261025-054831-overnight-rerun-2026-10-24-kimi26-pusht-faulty-predictor-reset-notebook-s3000,14,1,6,0
+kimi26,Kimi K2.6,pusht,faulty-predictor-saved-notebook,20261025-054831-overnight-rerun-2026-10-24-kimi26-pusht-faulty-predictor-saved-notebook-s3000,14,0,6,1
+kimi26,Kimi K2.6,switchboard,accurate-predictor-reset-notebook,20261021-182640-final-eight-model-2026-10-21-kimi26-switchboard-UR-s3000,14,6,6,5
+kimi26,Kimi K2.6,switchboard,accurate-predictor-saved-notebook,20261021-182638-final-eight-model-2026-10-21-kimi26-switchboard-UM-s3000,14,8,6,6
+kimi26,Kimi K2.6,switchboard,faulty-predictor-reset-notebook,20261021-182646-final-eight-model-2026-10-21-kimi26-switchboard-PR-s3000,14,4,6,4
+kimi26,Kimi K2.6,switchboard,faulty-predictor-saved-notebook,20261021-182639-final-eight-model-2026-10-21-kimi26-switchboard-PM-s3000,14,8,6,6
+nemotron,Nemotron 3 Super,depot,accurate-predictor-reset-notebook,20261021-182559-final-eight-model-2026-10-21-nemotron-depot-UR-s3000,14,1,6,0
+nemotron,Nemotron 3 Super,depot,accurate-predictor-saved-notebook,20261021-182556-final-eight-model-2026-10-21-nemotron-depot-UM-s3000,14,0,6,0
+nemotron,Nemotron 3 Super,depot,faulty-predictor-reset-notebook,20261021-182607-final-eight-model-2026-10-21-nemotron-depot-PR-s3000,14,2,6,2
+nemotron,Nemotron 3 Super,depot,faulty-predictor-saved-notebook,20261021-182600-final-eight-model-2026-10-21-nemotron-depot-PM-s3000,14,0,6,0
+nemotron,Nemotron 3 Super,iceslide,accurate-predictor-reset-notebook,20261021-202509-final-eight-model-2026-10-21-nemotron-iceslide-UR-s3000,14,2,6,3
+nemotron,Nemotron 3 Super,iceslide,accurate-predictor-saved-notebook,20261021-202042-final-eight-model-2026-10-21-nemotron-iceslide-UM-s3000,14,2,6,2
+nemotron,Nemotron 3 Super,iceslide,faulty-predictor-reset-notebook,20261021-203405-final-eight-model-2026-10-21-nemotron-iceslide-PR-s3000,14,2,6,2
+nemotron,Nemotron 3 Super,iceslide,faulty-predictor-saved-notebook,20261021-202937-final-eight-model-2026-10-21-nemotron-iceslide-PM-s3000,14,2,6,1
+nemotron,Nemotron 3 Super,patrol,accurate-predictor-reset-notebook,20261021-193408-final-eight-model-2026-10-21-nemotron-patrol-UR-s3000,14,0,6,0
+nemotron,Nemotron 3 Super,patrol,accurate-predictor-saved-notebook,20261021-192924-final-eight-model-2026-10-21-nemotron-patrol-UM-s3000,14,0,6,1
+nemotron,Nemotron 3 Super,patrol,faulty-predictor-reset-notebook,20261021-194819-final-eight-model-2026-10-21-nemotron-patrol-PR-s3000,14,0,6,0
+nemotron,Nemotron 3 Super,patrol,faulty-predictor-saved-notebook,20261021-194251-final-eight-model-2026-10-21-nemotron-patrol-PM-s3000,14,0,6,0
+nemotron,Nemotron 3 Super,portalmaze,accurate-predictor-reset-notebook,20261021-182733-final-eight-model-2026-10-21-nemotron-portalmaze-UR-s3000,14,2,6,1
+nemotron,Nemotron 3 Super,portalmaze,accurate-predictor-saved-notebook,20261021-182729-final-eight-model-2026-10-21-nemotron-portalmaze-UM-s3000,14,4,6,1
+nemotron,Nemotron 3 Super,portalmaze,faulty-predictor-reset-notebook,20261021-182738-final-eight-model-2026-10-21-nemotron-portalmaze-PR-s3000,14,3,6,0
+nemotron,Nemotron 3 Super,portalmaze,faulty-predictor-saved-notebook,20261021-182736-final-eight-model-2026-10-21-nemotron-portalmaze-PM-s3000,14,2,6,0
+nemotron,Nemotron 3 Super,pusht,accurate-predictor-reset-notebook,20261023-034910-final-eight-model-2026-10-21-nemotron-pusht-UR-s3000,14,0,6,0
+nemotron,Nemotron 3 Super,pusht,accurate-predictor-saved-notebook,20261023-034910-final-eight-model-2026-10-21-nemotron-pusht-UM-s3000,14,0,6,0
+nemotron,Nemotron 3 Super,pusht,faulty-predictor-reset-notebook,20261023-034910-final-eight-model-2026-10-21-nemotron-pusht-PR-s3000,14,0,6,0
+nemotron,Nemotron 3 Super,pusht,faulty-predictor-saved-notebook,20261023-034910-final-eight-model-2026-10-21-nemotron-pusht-PM-s3000,14,0,6,0
+nemotron,Nemotron 3 Super,switchboard,accurate-predictor-reset-notebook,20261021-195552-final-eight-model-2026-10-21-nemotron-switchboard-UR-s3000,14,1,6,1
+nemotron,Nemotron 3 Super,switchboard,accurate-predictor-saved-notebook,20261021-195042-final-eight-model-2026-10-21-nemotron-switchboard-UM-s3000,14,1,6,0
+nemotron,Nemotron 3 Super,switchboard,faulty-predictor-reset-notebook,20261021-200907-final-eight-model-2026-10-21-nemotron-switchboard-PR-s3000,14,3,6,1
+nemotron,Nemotron 3 Super,switchboard,faulty-predictor-saved-notebook,20261021-200356-final-eight-model-2026-10-21-nemotron-switchboard-PM-s3000,14,0,6,1
+opus55,Claude Opus 5.5,depot,accurate-predictor-reset-notebook,20261022-205711-opus-high-full-2026-10-22-opus55high-depot-UR-s3000,14,8,6,6
+opus55,Claude Opus 5.5,depot,accurate-predictor-saved-notebook,20261022-205711-opus-high-full-2026-10-22-opus55high-depot-UM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,depot,faulty-predictor-reset-notebook,20261022-205711-opus-high-full-2026-10-22-opus55high-depot-PR-s3000,14,8,6,6
+opus55,Claude Opus 5.5,depot,faulty-predictor-saved-notebook,20261022-205711-opus-high-full-2026-10-22-opus55high-depot-PM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,iceslide,accurate-predictor-reset-notebook,20261022-234153-opus-high-full-2026-10-22-opus55high-iceslide-UR-s3000,14,8,6,6
+opus55,Claude Opus 5.5,iceslide,accurate-predictor-saved-notebook,20261022-234044-opus-high-full-2026-10-22-opus55high-iceslide-UM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,iceslide,faulty-predictor-reset-notebook,20261023-000535-opus-high-full-2026-10-22-opus55high-iceslide-PR-s3000,14,8,6,6
+opus55,Claude Opus 5.5,iceslide,faulty-predictor-saved-notebook,20261022-235354-opus-high-full-2026-10-22-opus55high-iceslide-PM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,patrol,accurate-predictor-reset-notebook,20261022-221143-opus-high-full-2026-10-22-opus55high-patrol-UR-s3000,14,8,6,6
+opus55,Claude Opus 5.5,patrol,accurate-predictor-saved-notebook,20261022-220402-opus-high-full-2026-10-22-opus55high-patrol-UM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,patrol,faulty-predictor-reset-notebook,20261022-221703-opus-high-full-2026-10-22-opus55high-patrol-PR-s3000,14,8,6,6
+opus55,Claude Opus 5.5,patrol,faulty-predictor-saved-notebook,20261022-221159-opus-high-full-2026-10-22-opus55high-patrol-PM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,portalmaze,accurate-predictor-reset-notebook,20261022-212407-opus-high-full-2026-10-22-opus55high-portalmaze-UR-s3000,14,8,6,6
+opus55,Claude Opus 5.5,portalmaze,accurate-predictor-saved-notebook,20261022-212404-opus-high-full-2026-10-22-opus55high-portalmaze-UM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,portalmaze,faulty-predictor-reset-notebook,20261022-213004-opus-high-full-2026-10-22-opus55high-portalmaze-PR-s3000,14,7,6,6
+opus55,Claude Opus 5.5,portalmaze,faulty-predictor-saved-notebook,20261022-212816-opus-high-full-2026-10-22-opus55high-portalmaze-PM-s3000,14,7,6,5
+opus55,Claude Opus 5.5,pusht,accurate-predictor-reset-notebook,20261023-001908-opus-high-full-2026-10-22-opus55high-pusht-UR-s3000,14,8,6,6
+opus55,Claude Opus 5.5,pusht,accurate-predictor-saved-notebook,20261023-001250-opus-high-full-2026-10-22-opus55high-pusht-UM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,pusht,faulty-predictor-reset-notebook,20261023-003912-opus-high-full-2026-10-22-opus55high-pusht-PR-s3000,14,8,6,6
+opus55,Claude Opus 5.5,pusht,faulty-predictor-saved-notebook,20261023-003032-opus-high-full-2026-10-22-opus55high-pusht-PM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,switchboard,accurate-predictor-reset-notebook,20261022-230418-opus-high-full-2026-10-22-opus55high-switchboard-UR-s3000,14,8,6,4
+opus55,Claude Opus 5.5,switchboard,accurate-predictor-saved-notebook,20261022-230250-opus-high-full-2026-10-22-opus55high-switchboard-UM-s3000,14,8,6,6
+opus55,Claude Opus 5.5,switchboard,faulty-predictor-reset-notebook,20261022-233428-opus-high-full-2026-10-22-opus55high-switchboard-PR-s3000,14,7,6,5
+opus55,Claude Opus 5.5,switchboard,faulty-predictor-saved-notebook,20261022-231243-opus-high-full-2026-10-22-opus55high-switchboard-PM-s3000,14,8,6,6
+qwen36,Qwen3.6-35B-A3B,depot,accurate-predictor-reset-notebook,20261021-182556-final-eight-model-2026-10-21-qwen36-depot-UR-s3000,14,2,6,0
+qwen36,Qwen3.6-35B-A3B,depot,accurate-predictor-saved-notebook,20261021-182554-final-eight-model-2026-10-21-qwen36-depot-UM-s3000,14,2,6,3
+qwen36,Qwen3.6-35B-A3B,depot,faulty-predictor-reset-notebook,20261021-182605-final-eight-model-2026-10-21-qwen36-depot-PR-s3000,14,1,6,1
+qwen36,Qwen3.6-35B-A3B,depot,faulty-predictor-saved-notebook,20261021-182559-final-eight-model-2026-10-21-qwen36-depot-PM-s3000,14,0,6,0
+qwen36,Qwen3.6-35B-A3B,iceslide,accurate-predictor-reset-notebook,20261021-220131-final-eight-model-2026-10-21-qwen36-iceslide-UR-s3000,14,4,6,4
+qwen36,Qwen3.6-35B-A3B,iceslide,accurate-predictor-saved-notebook,20261021-214537-final-eight-model-2026-10-21-qwen36-iceslide-UM-s3000,14,5,6,3
+qwen36,Qwen3.6-35B-A3B,iceslide,faulty-predictor-reset-notebook,20261021-222823-final-eight-model-2026-10-21-qwen36-iceslide-PR-s3000,14,3,6,4
+qwen36,Qwen3.6-35B-A3B,iceslide,faulty-predictor-saved-notebook,20261021-222337-final-eight-model-2026-10-21-qwen36-iceslide-PM-s3000,14,3,6,2
+qwen36,Qwen3.6-35B-A3B,patrol,accurate-predictor-reset-notebook,20261021-201026-final-eight-model-2026-10-21-qwen36-patrol-UR-s3000,14,2,6,0
+qwen36,Qwen3.6-35B-A3B,patrol,accurate-predictor-saved-notebook,20261021-195939-final-eight-model-2026-10-21-qwen36-patrol-UM-s3000,14,0,6,2
+qwen36,Qwen3.6-35B-A3B,patrol,faulty-predictor-reset-notebook,20261021-203003-final-eight-model-2026-10-21-qwen36-patrol-PR-s3000,14,0,6,0
+qwen36,Qwen3.6-35B-A3B,patrol,faulty-predictor-saved-notebook,20261021-201605-final-eight-model-2026-10-21-qwen36-patrol-PM-s3000,14,2,6,1
+qwen36,Qwen3.6-35B-A3B,portalmaze,accurate-predictor-reset-notebook,20261021-182734-final-eight-model-2026-10-21-qwen36-portalmaze-UR-s3000,14,4,6,1
+qwen36,Qwen3.6-35B-A3B,portalmaze,accurate-predictor-saved-notebook,20261021-182729-final-eight-model-2026-10-21-qwen36-portalmaze-UM-s3000,14,4,6,2
+qwen36,Qwen3.6-35B-A3B,portalmaze,faulty-predictor-reset-notebook,20261021-182739-final-eight-model-2026-10-21-qwen36-portalmaze-PR-s3000,14,6,6,2
+qwen36,Qwen3.6-35B-A3B,portalmaze,faulty-predictor-saved-notebook,20261021-182736-final-eight-model-2026-10-21-qwen36-portalmaze-PM-s3000,14,3,6,2
+qwen36,Qwen3.6-35B-A3B,pusht,accurate-predictor-reset-notebook,20261023-034811-final-eight-model-2026-10-21-qwen36-pusht-UR-s3000,14,0,6,0
+qwen36,Qwen3.6-35B-A3B,pusht,accurate-predictor-saved-notebook,20261023-034811-final-eight-model-2026-10-21-qwen36-pusht-UM-s3000,14,0,6,0
+qwen36,Qwen3.6-35B-A3B,pusht,faulty-predictor-reset-notebook,20261023-034811-final-eight-model-2026-10-21-qwen36-pusht-PR-s3000,14,0,6,0
+qwen36,Qwen3.6-35B-A3B,pusht,faulty-predictor-saved-notebook,20261023-034811-final-eight-model-2026-10-21-qwen36-pusht-PM-s3000,14,0,6,0
+qwen36,Qwen3.6-35B-A3B,switchboard,accurate-predictor-reset-notebook,20261021-212814-final-eight-model-2026-10-21-qwen36-switchboard-UR-s3000,14,2,6,1
+qwen36,Qwen3.6-35B-A3B,switchboard,accurate-predictor-saved-notebook,20261021-210701-final-eight-model-2026-10-21-qwen36-switchboard-UM-s3000,14,1,6,2
+qwen36,Qwen3.6-35B-A3B,switchboard,faulty-predictor-reset-notebook,20261021-214015-final-eight-model-2026-10-21-qwen36-switchboard-PR-s3000,14,1,6,1
+qwen36,Qwen3.6-35B-A3B,switchboard,faulty-predictor-saved-notebook,20261021-213454-final-eight-model-2026-10-21-qwen36-switchboard-PM-s3000,14,1,6,1

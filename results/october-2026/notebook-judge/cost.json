@@ -1,0 +1,72 @@
+{
+ "anthropic:claude-opus-5-5": {
+  "rows": 1672,
+  "refusals": 0,
+  "errors": 0,
+  "calls_this_run": 0,
+  "tokens": {
+   "input_tokens": 2966317,
+   "cache_write_tokens": 820440,
+   "cache_read_tokens": 2220912,
+   "output_tokens": 707952
+  },
+  "usd": 15.5748,
+  "usd_this_run": 0,
+  "usd_per_notebook": 0.00932,
+  "price_per_mtok": {
+   "input": 4.0,
+   "output": 20.0,
+   "cache_read": 0.2,
+   "cache_write": 5.0,
+   "batch_factor": 0.5
+  },
+  "note": "batch rows are billed at the batch discount"
+ },
+ "sail:deepseek-ai/DeepSeek-V4.1-Flash": {
+  "rows": 1672,
+  "refusals": 0,
+  "errors": 0,
+  "calls_this_run": 0,
+  "tokens": {
+   "input_tokens": 1859212,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 2772797,
+   "output_tokens": 7064534
+  },
+  "usd": 2.5362,
+  "usd_this_run": 0,
+  "usd_per_notebook": 0.00152,
+  "price_per_mtok": {
+   "input": 0.09,
+   "output": 0.3,
+   "cache_read": null,
+   "cache_write": null,
+   "batch_factor": 0.5
+  },
+  "note": ""
+ },
+ "sail:moonshotai/Kimi-K3": {
+  "rows": 1672,
+  "refusals": 0,
+  "errors": 0,
+  "calls_this_run": 0,
+  "tokens": {
+   "input_tokens": 2028163,
+   "cache_write_tokens": 0,
+   "cache_read_tokens": 2187046,
+   "output_tokens": 4661766
+  },
+  "usd": 22.8623,
+  "usd_this_run": 0,
+  "usd_per_notebook": 0.01367,
+  "price_per_mtok": {
+   "input": 1.0,
+   "output": 4.0,
+   "cache_read": null,
+   "cache_write": null,
+   "batch_factor": 0.5
+  },
+  "note": ""
+ },
+ "total_usd": 40.9733
+}

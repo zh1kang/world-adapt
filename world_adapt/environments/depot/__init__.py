@@ -1,0 +1,1 @@
+"""Standard Depot PDDL adapter."""

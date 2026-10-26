@@ -1,0 +1,172 @@
+{
+  "depot": {
+    "actions": [
+      "drive t0 l0 l1",
+      "lift h0 c0 p0 l0",
+      "drop h0 c0 p0 l0",
+      "load h0 c0 t0 l0",
+      "unload h0 c0 t0 l0"
+    ],
+    "faulty_predictor": {
+      "atoms": [
+        {
+          "condition": "(load & truck_already_loaded)",
+          "description": "Predictor incorrectly blocks loading a second crate into a truck.",
+          "family": "prerequisite",
+          "name": "single_cargo"
+        },
+        {
+          "condition": "(drop & support_is_crate)",
+          "description": "Predictor incorrectly blocks dropping a crate onto another crate.",
+          "family": "prerequisite",
+          "name": "no_stacking"
+        }
+      ],
+      "complexity": 4,
+      "name": "cargo_and_stacks",
+      "version": "1"
+    },
+    "faulty_predictor_profile": "cargo_and_stacks",
+    "goal": "Arrange every crate so that all goal facts hold.",
+    "rules": "Standard Depot PDDL: clear-stack lifting, one crate per hoist, load/unload at the truck's place."
+  },
+  "iceslide": {
+    "actions": [
+      "up",
+      "down",
+      "left",
+      "right"
+    ],
+    "faulty_predictor": {
+      "atoms": [
+        {
+          "condition": "crate_slides_2+_and_stops_at_obstacle",
+          "description": "A launched crate that really slides 2+ cells and stops at a wall or another crate is predicted to stop one cell earlier, hiding crates that reach walls and corners.",
+          "family": "motion",
+          "name": "crate_stops_early"
+        },
+        {
+          "condition": "crate_stops_on_type_R",
+          "description": "A launched crate that really stops on a type R tile is predicted to slide on as if the tile were plain floor.",
+          "family": "prerequisite",
+          "name": "crate_slides_past_rough"
+        },
+        {
+          "condition": "(crate_drops_into_socket & action_is_vertical)",
+          "description": "A crate launched up or down into an empty socket is predicted to stop there loose instead of being fixed.",
+          "family": "contact",
+          "name": "socket_vertical_no_capture"
+        }
+      ],
+      "complexity": 4,
+      "name": "launch_outcomes",
+      "version": "1"
+    },
+    "faulty_predictor_profile": "launch_outcomes",
+    "goal": "Get every crate into a socket.",
+    "rules": "The agent slides until the next cell is a wall or crate, or it enters a type R tile. If its slide is stopped by a loose crate (and it is not on type R), the crate is launched and slides until blocked, entering type R, or entering an empty socket, where it is fixed forever."
+  },
+  "patrol": {
+    "actions": [
+      "up",
+      "down",
+      "left",
+      "right",
+      "wait"
+    ],
+    "faulty_predictor": {
+      "atoms": [
+        {
+          "condition": "agent_ends_orthogonally_adjacent_to_guard",
+          "description": "Ending a step orthogonally adjacent to a guard is predicted as a capture (the real rule needs the same cell).",
+          "family": "contact",
+          "name": "adjacent_capture"
+        }
+      ],
+      "complexity": 1,
+      "name": "adjacent_capture",
+      "version": "1"
+    },
+    "faulty_predictor_profile": "adjacent_capture",
+    "goal": "Reach the exit cell without being caught.",
+    "rules": "One cell per action or wait. After the agent moves, each guard advances one step along a fixed hidden back-and-forth route. Ending on a guard's cell or swapping with a guard is capture (failure)."
+  },
+  "portalmaze": {
+    "actions": [
+      "up",
+      "down",
+      "left",
+      "right"
+    ],
+    "faulty_predictor": {
+      "atoms": [
+        {
+          "condition": "(blocked_by_locked_door & holds_unrelated_key)",
+          "description": "A locked door is predicted to open while an unrelated key is held.",
+          "family": "prerequisite",
+          "name": "door_wrong_key"
+        },
+        {
+          "condition": "enters_reversible_pad",
+          "description": "A safe pad is predicted to lead to a pad that links into it.",
+          "family": "motion",
+          "name": "reverse_portal"
+        }
+      ],
+      "complexity": 3,
+      "name": "door_and_portal_prerequisite",
+      "version": "1"
+    },
+    "faulty_predictor_profile": "door_and_portal_prerequisite",
+    "goal": "Reach the exit (X).",
+    "rules": "Walls block movement. A door is impassable until the agent has picked up the key of the same letter; keys are picked up by stepping on them and are never consumed. Every pad teleports the agent, on stepping onto it, to a fixed hidden destination pad (links may be one-way). Arriving on a destination pad does not trigger it; the agent must step off and back on. One pad leads one-way into a sealed pocket of two pads that link only to each other, an irreversible trap. Success on reaching the exit; no terminal failure."
+  },
+  "pusht": {
+    "actions": [
+      "move_to <x> <y>: absolute pusher target in pixels, coordinates in [0, 512]; held for 4 control steps; arrival is not guaranteed"
+    ],
+    "faulty_predictor": {
+      "atoms": [
+        {
+          "condition": "active",
+          "description": "The predictor moves the pusher 80% of the requested target displacement.",
+          "family": "motion",
+          "name": "target_gain"
+        }
+      ],
+      "complexity": 1,
+      "name": "target_gain",
+      "version": "1"
+    },
+    "faulty_predictor_profile": "target_gain",
+    "goal": "Push the T-shaped block so that it overlaps the goal pose by more than 95%.",
+    "rules": "2D rigid-body pushing (pymunk): a circular pusher under PD control pushes a T block with friction-free planar contact."
+  },
+  "switchboard": {
+    "actions": [
+      "press 1",
+      "press 2",
+      "press 3",
+      "press 4",
+      "press 5",
+      "press 6",
+      "press 7"
+    ],
+    "faulty_predictor": {
+      "atoms": [
+        {
+          "condition": "(is_breaker & some_button_disabled)",
+          "description": "After a context cue, a breaker is predicted to disable a different enabled button.",
+          "family": "prerequisite",
+          "name": "breaker_retarget_enabled"
+        }
+      ],
+      "complexity": 2,
+      "name": "breaker_retarget_enabled_only",
+      "version": "1"
+    },
+    "faulty_predictor_profile": "breaker_retarget_enabled_only",
+    "goal": "Turn on every lamp on the panel.",
+    "rules": "Each numbered button toggles a fixed hidden subset of lamps (subsets may overlap). Some buttons are breakers: pressing one also permanently disables one specific other button (hidden until it happens). Pressing a disabled button does nothing but still costs the action. Success when all lamps are on; there is no terminal failure, but disabling a button that is needed can make the task unsolvable."
+  }
+}

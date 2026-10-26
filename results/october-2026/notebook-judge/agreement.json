@@ -1,0 +1,213 @@
+{
+ "judges": [
+  "anthropic:claude-opus-5-5",
+  "sail:deepseek-ai/DeepSeek-V4.1-Flash",
+  "sail:moonshotai/Kimi-K3"
+ ],
+ "diagnosis": {
+  "pairwise_cohen": {
+   "anthropic:claude-opus-5-5 | sail:deepseek-ai/DeepSeek-V4.1-Flash": {
+    "kappa": 0.8166549491258214,
+    "n": 1672,
+    "observed_agreement": 0.8953349282296651,
+    "confusion": {
+     "names_rule": {
+      "names_rule": 125,
+      "locates_error": 17,
+      "vague_warning": 0,
+      "no_diagnosis": 0
+     },
+     "locates_error": {
+      "names_rule": 28,
+      "locates_error": 133,
+      "vague_warning": 10,
+      "no_diagnosis": 0
+     },
+     "vague_warning": {
+      "names_rule": 0,
+      "locates_error": 46,
+      "vague_warning": 958,
+      "no_diagnosis": 12
+     },
+     "no_diagnosis": {
+      "names_rule": 0,
+      "locates_error": 3,
+      "vague_warning": 59,
+      "no_diagnosis": 281
+     }
+    }
+   },
+   "anthropic:claude-opus-5-5 | sail:moonshotai/Kimi-K3": {
+    "kappa": 0.7923704845702835,
+    "n": 1672,
+    "observed_agreement": 0.8803827751196173,
+    "confusion": {
+     "names_rule": {
+      "names_rule": 135,
+      "locates_error": 7,
+      "vague_warning": 0,
+      "no_diagnosis": 0
+     },
+     "locates_error": {
+      "names_rule": 49,
+      "locates_error": 111,
+      "vague_warning": 11,
+      "no_diagnosis": 0
+     },
+     "vague_warning": {
+      "names_rule": 2,
+      "locates_error": 55,
+      "vague_warning": 944,
+      "no_diagnosis": 15
+     },
+     "no_diagnosis": {
+      "names_rule": 1,
+      "locates_error": 5,
+      "vague_warning": 55,
+      "no_diagnosis": 282
+     }
+    }
+   },
+   "sail:deepseek-ai/DeepSeek-V4.1-Flash | sail:moonshotai/Kimi-K3": {
+    "kappa": 0.8262732849694512,
+    "n": 1672,
+    "observed_agreement": 0.9001196172248804,
+    "confusion": {
+     "names_rule": {
+      "names_rule": 144,
+      "locates_error": 9,
+      "vague_warning": 0,
+      "no_diagnosis": 0
+     },
+     "locates_error": {
+      "names_rule": 41,
+      "locates_error": 132,
+      "vague_warning": 26,
+      "no_diagnosis": 0
+     },
+     "vague_warning": {
+      "names_rule": 2,
+      "locates_error": 35,
+      "vague_warning": 961,
+      "no_diagnosis": 29
+     },
+     "no_diagnosis": {
+      "names_rule": 0,
+      "locates_error": 2,
+      "vague_warning": 23,
+      "no_diagnosis": 268
+     }
+    }
+   }
+  },
+  "fleiss": {
+   "kappa": 0.8116784529031962,
+   "n": 1672,
+   "raters": 3,
+   "observed_agreement": 0.8919457735247208
+  }
+ },
+ "predictor_policy": {
+  "pairwise_cohen": {
+   "anthropic:claude-opus-5-5 | sail:deepseek-ai/DeepSeek-V4.1-Flash": {
+    "kappa": 0.6141192302516485,
+    "n": 1672,
+    "observed_agreement": 0.7948564593301436,
+    "confusion": {
+     "relies": {
+      "relies": 466,
+      "restricts": 282,
+      "avoids": 0,
+      "not_mentioned": 5
+     },
+     "restricts": {
+      "relies": 23,
+      "restricts": 808,
+      "avoids": 8,
+      "not_mentioned": 7
+     },
+     "avoids": {
+      "relies": 0,
+      "restricts": 0,
+      "avoids": 6,
+      "not_mentioned": 0
+     },
+     "not_mentioned": {
+      "relies": 4,
+      "restricts": 14,
+      "avoids": 0,
+      "not_mentioned": 49
+     }
+    }
+   },
+   "anthropic:claude-opus-5-5 | sail:moonshotai/Kimi-K3": {
+    "kappa": 0.6165792602058697,
+    "n": 1672,
+    "observed_agreement": 0.7984449760765551,
+    "confusion": {
+     "relies": {
+      "relies": 459,
+      "restricts": 294,
+      "avoids": 0,
+      "not_mentioned": 0
+     },
+     "restricts": {
+      "relies": 11,
+      "restricts": 828,
+      "avoids": 6,
+      "not_mentioned": 1
+     },
+     "avoids": {
+      "relies": 0,
+      "restricts": 0,
+      "avoids": 6,
+      "not_mentioned": 0
+     },
+     "not_mentioned": {
+      "relies": 4,
+      "restricts": 20,
+      "avoids": 1,
+      "not_mentioned": 42
+     }
+    }
+   },
+   "sail:deepseek-ai/DeepSeek-V4.1-Flash | sail:moonshotai/Kimi-K3": {
+    "kappa": 0.7385747372199188,
+    "n": 1672,
+    "observed_agreement": 0.8785885167464115,
+    "confusion": {
+     "relies": {
+      "relies": 390,
+      "restricts": 102,
+      "avoids": 0,
+      "not_mentioned": 1
+     },
+     "restricts": {
+      "relies": 78,
+      "restricts": 1026,
+      "avoids": 0,
+      "not_mentioned": 0
+     },
+     "avoids": {
+      "relies": 0,
+      "restricts": 3,
+      "avoids": 11,
+      "not_mentioned": 0
+     },
+     "not_mentioned": {
+      "relies": 6,
+      "restricts": 11,
+      "avoids": 2,
+      "not_mentioned": 42
+     }
+    }
+   }
+  },
+  "fleiss": {
+   "kappa": 0.6487902446280893,
+   "n": 1672,
+   "raters": 3,
+   "observed_agreement": 0.82396331738437
+  }
+ }
+}

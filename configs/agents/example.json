@@ -1,0 +1,17 @@
+{
+  "provider": "sail",
+  "model": "set-your-served-model-id",
+  "reasoning_effort": "low",
+  "max_completion_tokens": 32768,
+  "max_retries": 3,
+  "notebook_tokens": 2000,
+  "max_context_tokens": 80000,
+  "keep_recent_turns": 2,
+  "writer_context_tokens": 64000,
+  "writer_evidence_tokens": 56000,
+  "notebook_max_tokens": 200000,
+  "notebook_max_seconds": 900,
+  "notebook_max_completion_tokens": 32768,
+  "stream": true,
+  "require_usage": true
+}
