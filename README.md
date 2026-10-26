@@ -80,7 +80,7 @@ The table gives the share of held-out tasks solved; each condition cell holds 36
 |---|---:|---:|---:|---:|---:|
 | Claude Opus 5.5 | **97%** | 100% | 94% | 97% | 97% |
 | DeepSeek V4.1 Flash | 88% | 94% | 89% | 83% | 83% |
-| Kimi K2.6 | 73% | 83% | 67% | 75% | 67% |
+| Kimi K2.6 | 68% | 72% | 67% | 67% | 67% |
 | GLM-5.3-Flash | 59% | 72% | 56% | 61% | 47% |
 | Gemma 4 31B | 41% | 44% | 42% | 39% | 39% |
 | Qwen3.6-35B-A3B | 22% | 33% | 17% | 17% | 22% |
@@ -91,16 +91,17 @@ The table gives the share of held-out tasks solved; each condition cell holds 36
 What we take from it (paired over the same tasks, 95% bootstrap intervals over model and environment cells, Inkling excluded because it solves nothing):
 
 - **The faulty predictor costs about five points.**
-  Over all 14 tasks it changes success by -5.0 points [-7.3, -2.8], about equally with a saved or a reset notebook.
+  Over all 14 tasks it changes success by -5.1 points [-7.4, -2.8], about equally with a saved or a reset notebook.
 - **A saved notebook helps only with an accurate predictor.**
-  On held-out tasks it adds +7.4 points [+3.2, +11.6] with the accurate predictor and +0.4 [-4.2, +5.2] with the faulty one.
-  The difference, -7.0 [-13.6, -1.0], is borderline (permutation p = 0.05).
-- **Agents find the error but do not act on it.**
+  On held-out tasks it adds +6.6 points [+2.8, +10.8] with the accurate predictor and +0.0 [-4.5, +4.9] with the faulty one.
+  The difference, -6.6 [-12.5, -0.7], is borderline (permutation p = 0.05).
+- **Agents act on what they learn, but success does not follow.**
   A three-judge Notebook Judge shows that Opus, DeepSeek, Kimi, and Gemma name or locate the perturbed rule in nearly every faulty-predictor history.
+  In Patrol and Depot, where the faulty predictor only raises false alarms, agents whose notebook diagnosed the error execute through 67% of them against 23% without a diagnosis, on held-out tasks too, yet their held-out success does not rise.
   Weaker models invent errors: Nemotron reports a non-existent predictor error in 10 of its 12 accurate-predictor histories.
 - **Push-T is the hardest environment:** five models solve none of its held-out tasks.
 
-Kimi K2.6 has 332 of its 336 tasks scored; four held-out tasks of one Patrol history are missing and count as missing, not as failures.
+Every model has all 336 tasks scored; histories cut short by provider errors were rerun, and lost tasks never count as failures.
 [results/october-2026](results/october-2026) holds the per-task outcomes and the notebook labels behind every number here.
 
 ## Installation

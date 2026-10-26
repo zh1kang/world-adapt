@@ -108,7 +108,8 @@ SAIL_SCHEMA_NOTE = "\n\nReply with only one JSON object that matches this JSON s
 # --- notebooks -----------------------------------------------------------------------------------------------------
 
 NAME = re.compile(r"^(?:\d{8}-\d{6}-)?(?P<prefix>.+)-(?P<env>[a-z0-9]+)-(?P<cond>UM|UR|PM|PR|"
-                  r"(?:accurate|faulty)-predictor-(?:saved|reset)-notebook)-s(?P<seed>\d+)$")
+                  r"(?:accurate|faulty)-predictor-(?:saved|reset)-notebook)-s(?P<seed>\d+)"
+                  r"(?:-derived-[0-9a-f]+)?$")  # recovery merges append "-derived-<hash>" to a replayed run
 CODES = {"UM": "accurate-predictor-saved-notebook", "UR": "accurate-predictor-reset-notebook",
          "PM": "faulty-predictor-saved-notebook", "PR": "faulty-predictor-reset-notebook"}
 

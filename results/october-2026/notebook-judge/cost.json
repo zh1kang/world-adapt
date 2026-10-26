@@ -1,18 +1,18 @@
 {
  "anthropic:claude-opus-5-5": {
-  "rows": 1672,
+  "rows": 1674,
   "refusals": 0,
   "errors": 0,
   "calls_this_run": 0,
   "tokens": {
-   "input_tokens": 2966317,
-   "cache_write_tokens": 820440,
-   "cache_read_tokens": 2220912,
-   "output_tokens": 707952
+   "input_tokens": 3001429,
+   "cache_write_tokens": 814716,
+   "cache_read_tokens": 2257164,
+   "output_tokens": 716278
   },
-  "usd": 15.5748,
+  "usd": 16.1821,
   "usd_this_run": 0,
-  "usd_per_notebook": 0.00932,
+  "usd_per_notebook": 0.00967,
   "price_per_mtok": {
    "input": 4.0,
    "output": 20.0,
@@ -23,19 +23,19 @@
   "note": "batch rows are billed at the batch discount"
  },
  "sail:deepseek-ai/DeepSeek-V4.1-Flash": {
-  "rows": 1672,
+  "rows": 1674,
   "refusals": 0,
   "errors": 0,
   "calls_this_run": 0,
   "tokens": {
-   "input_tokens": 1859212,
+   "input_tokens": 1886931,
    "cache_write_tokens": 0,
-   "cache_read_tokens": 2772797,
-   "output_tokens": 7064534
+   "cache_read_tokens": 2783081,
+   "output_tokens": 7167827
   },
-  "usd": 2.5362,
+  "usd": 2.5706,
   "usd_this_run": 0,
-  "usd_per_notebook": 0.00152,
+  "usd_per_notebook": 0.00154,
   "price_per_mtok": {
    "input": 0.09,
    "output": 0.3,
@@ -46,19 +46,19 @@
   "note": ""
  },
  "sail:moonshotai/Kimi-K3": {
-  "rows": 1672,
+  "rows": 1674,
   "refusals": 0,
   "errors": 0,
   "calls_this_run": 0,
   "tokens": {
-   "input_tokens": 2028163,
+   "input_tokens": 2059660,
    "cache_write_tokens": 0,
-   "cache_read_tokens": 2187046,
-   "output_tokens": 4661766
+   "cache_read_tokens": 2206373,
+   "output_tokens": 4729528
   },
-  "usd": 22.8623,
+  "usd": 23.1841,
   "usd_this_run": 0,
-  "usd_per_notebook": 0.01367,
+  "usd_per_notebook": 0.01385,
   "price_per_mtok": {
    "input": 1.0,
    "output": 4.0,
@@ -68,5 +68,5 @@
   },
   "note": ""
  },
- "total_usd": 40.9733
+ "total_usd": 41.9368
 }

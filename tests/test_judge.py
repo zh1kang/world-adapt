@@ -52,6 +52,9 @@ def test_parse_old_and_new_folder_names():
         "faulty-predictor-reset-notebook"
     new = J.parse_folder("20261105-101010-study-portalmaze-faulty-predictor-reset-notebook-s2")
     assert (new["env"], new["condition"], new["memory"]) == ("portalmaze", "faulty-predictor-reset-notebook", "reset")
+    derived = J.parse_folder("derived-c778adb49142-kimi-cloud-fresh-8f1408f9d657-kimi26-iceslide-"
+                             "faulty-predictor-saved-notebook-s3000-derived-c778adb49142")
+    assert (derived["model"], derived["env"], derived["memory"]) == ("kimi26", "iceslide", "saved")
     with pytest.raises(ValueError):
         J.parse_folder("not-a-run")
 

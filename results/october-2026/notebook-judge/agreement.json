@@ -7,207 +7,207 @@
  "diagnosis": {
   "pairwise_cohen": {
    "anthropic:claude-opus-5-5 | sail:deepseek-ai/DeepSeek-V4.1-Flash": {
-    "kappa": 0.8166549491258214,
-    "n": 1672,
-    "observed_agreement": 0.8953349282296651,
+    "kappa": 0.8131456604363282,
+    "n": 1674,
+    "observed_agreement": 0.8924731182795699,
     "confusion": {
      "names_rule": {
-      "names_rule": 125,
-      "locates_error": 17,
+      "names_rule": 122,
+      "locates_error": 19,
       "vague_warning": 0,
       "no_diagnosis": 0
      },
      "locates_error": {
-      "names_rule": 28,
-      "locates_error": 133,
-      "vague_warning": 10,
+      "names_rule": 32,
+      "locates_error": 134,
+      "vague_warning": 8,
       "no_diagnosis": 0
      },
      "vague_warning": {
       "names_rule": 0,
       "locates_error": 46,
-      "vague_warning": 958,
+      "vague_warning": 951,
       "no_diagnosis": 12
      },
      "no_diagnosis": {
       "names_rule": 0,
       "locates_error": 3,
-      "vague_warning": 59,
-      "no_diagnosis": 281
+      "vague_warning": 60,
+      "no_diagnosis": 287
      }
     }
    },
    "anthropic:claude-opus-5-5 | sail:moonshotai/Kimi-K3": {
-    "kappa": 0.7923704845702835,
-    "n": 1672,
-    "observed_agreement": 0.8803827751196173,
+    "kappa": 0.7891218665083715,
+    "n": 1674,
+    "observed_agreement": 0.8775388291517324,
     "confusion": {
      "names_rule": {
-      "names_rule": 135,
+      "names_rule": 134,
       "locates_error": 7,
       "vague_warning": 0,
       "no_diagnosis": 0
      },
      "locates_error": {
-      "names_rule": 49,
-      "locates_error": 111,
-      "vague_warning": 11,
+      "names_rule": 55,
+      "locates_error": 110,
+      "vague_warning": 9,
       "no_diagnosis": 0
      },
      "vague_warning": {
       "names_rule": 2,
       "locates_error": 55,
-      "vague_warning": 944,
+      "vague_warning": 937,
       "no_diagnosis": 15
      },
      "no_diagnosis": {
       "names_rule": 1,
       "locates_error": 5,
-      "vague_warning": 55,
-      "no_diagnosis": 282
+      "vague_warning": 56,
+      "no_diagnosis": 288
      }
     }
    },
    "sail:deepseek-ai/DeepSeek-V4.1-Flash | sail:moonshotai/Kimi-K3": {
-    "kappa": 0.8262732849694512,
-    "n": 1672,
-    "observed_agreement": 0.9001196172248804,
+    "kappa": 0.8218183630413476,
+    "n": 1674,
+    "observed_agreement": 0.8966547192353644,
     "confusion": {
      "names_rule": {
       "names_rule": 144,
-      "locates_error": 9,
+      "locates_error": 10,
       "vague_warning": 0,
       "no_diagnosis": 0
      },
      "locates_error": {
-      "names_rule": 41,
-      "locates_error": 132,
-      "vague_warning": 26,
+      "names_rule": 46,
+      "locates_error": 131,
+      "vague_warning": 25,
       "no_diagnosis": 0
      },
      "vague_warning": {
       "names_rule": 2,
-      "locates_error": 35,
-      "vague_warning": 961,
-      "no_diagnosis": 29
+      "locates_error": 34,
+      "vague_warning": 953,
+      "no_diagnosis": 30
      },
      "no_diagnosis": {
       "names_rule": 0,
       "locates_error": 2,
-      "vague_warning": 23,
-      "no_diagnosis": 268
+      "vague_warning": 24,
+      "no_diagnosis": 273
      }
     }
    }
   },
   "fleiss": {
-   "kappa": 0.8116784529031962,
-   "n": 1672,
+   "kappa": 0.807935709624105,
+   "n": 1674,
    "raters": 3,
-   "observed_agreement": 0.8919457735247208
+   "observed_agreement": 0.8888888888888888
   }
  },
  "predictor_policy": {
   "pairwise_cohen": {
    "anthropic:claude-opus-5-5 | sail:deepseek-ai/DeepSeek-V4.1-Flash": {
-    "kappa": 0.6141192302516485,
-    "n": 1672,
-    "observed_agreement": 0.7948564593301436,
+    "kappa": 0.6251067943251603,
+    "n": 1674,
+    "observed_agreement": 0.7998805256869773,
     "confusion": {
      "relies": {
-      "relies": 466,
-      "restricts": 282,
+      "relies": 463,
+      "restricts": 272,
       "avoids": 0,
       "not_mentioned": 5
      },
      "restricts": {
       "relies": 23,
-      "restricts": 808,
+      "restricts": 814,
       "avoids": 8,
       "not_mentioned": 7
      },
      "avoids": {
       "relies": 0,
       "restricts": 0,
-      "avoids": 6,
+      "avoids": 7,
       "not_mentioned": 0
      },
      "not_mentioned": {
-      "relies": 4,
+      "relies": 6,
       "restricts": 14,
       "avoids": 0,
-      "not_mentioned": 49
+      "not_mentioned": 55
      }
     }
    },
    "anthropic:claude-opus-5-5 | sail:moonshotai/Kimi-K3": {
-    "kappa": 0.6165792602058697,
-    "n": 1672,
-    "observed_agreement": 0.7984449760765551,
+    "kappa": 0.6248578222154819,
+    "n": 1674,
+    "observed_agreement": 0.8022700119474313,
     "confusion": {
      "relies": {
-      "relies": 459,
-      "restricts": 294,
+      "relies": 457,
+      "restricts": 283,
       "avoids": 0,
       "not_mentioned": 0
      },
      "restricts": {
       "relies": 11,
-      "restricts": 828,
+      "restricts": 834,
       "avoids": 6,
       "not_mentioned": 1
      },
      "avoids": {
       "relies": 0,
       "restricts": 0,
-      "avoids": 6,
+      "avoids": 7,
       "not_mentioned": 0
      },
      "not_mentioned": {
-      "relies": 4,
+      "relies": 9,
       "restricts": 20,
       "avoids": 1,
-      "not_mentioned": 42
+      "not_mentioned": 45
      }
     }
    },
    "sail:deepseek-ai/DeepSeek-V4.1-Flash | sail:moonshotai/Kimi-K3": {
-    "kappa": 0.7385747372199188,
-    "n": 1672,
-    "observed_agreement": 0.8785885167464115,
+    "kappa": 0.7413048112058465,
+    "n": 1674,
+    "observed_agreement": 0.8787335722819594,
     "confusion": {
      "relies": {
-      "relies": 390,
-      "restricts": 102,
+      "relies": 391,
+      "restricts": 100,
       "avoids": 0,
       "not_mentioned": 1
      },
      "restricts": {
-      "relies": 78,
-      "restricts": 1026,
+      "relies": 77,
+      "restricts": 1023,
       "avoids": 0,
       "not_mentioned": 0
      },
      "avoids": {
       "relies": 0,
       "restricts": 3,
-      "avoids": 11,
+      "avoids": 12,
       "not_mentioned": 0
      },
      "not_mentioned": {
-      "relies": 6,
+      "relies": 9,
       "restricts": 11,
       "avoids": 2,
-      "not_mentioned": 42
+      "not_mentioned": 45
      }
     }
    }
   },
   "fleiss": {
-   "kappa": 0.6487902446280893,
-   "n": 1672,
+   "kappa": 0.6569424589202846,
+   "n": 1674,
    "raters": 3,
-   "observed_agreement": 0.82396331738437
+   "observed_agreement": 0.8269613699721227
   }
  }
 }
