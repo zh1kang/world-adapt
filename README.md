@@ -90,9 +90,9 @@ The table gives the share of held-out tasks solved; each condition cell holds 36
 
 What we take from it (paired over the same tasks, 95% bootstrap intervals over model and environment cells, Inkling excluded because it solves nothing):
 
-- **The faulty predictor costs about five points.**
-  Over all 14 tasks it changes success by -5.1 points [-7.4, -2.8], about equally with a saved or a reset notebook.
-- **A saved notebook helps only with an accurate predictor.**
+- **The faulty predictor costs about four to five points.**
+  It changes held-out success by -4.0 points [-7.5, -0.5] and success over all 14 tasks by -5.1 points [-7.4, -2.8].
+- **A saved notebook helps with an accurate predictor; with a faulty one we detect no gain.**
   On held-out tasks it adds +6.6 points [+2.8, +10.8] with the accurate predictor and +0.0 [-4.5, +4.9] with the faulty one.
   The difference, -6.6 [-12.5, -0.7], is borderline (permutation p = 0.05).
 - **Agents act on what they learn, but success does not follow.**
