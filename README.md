@@ -6,6 +6,8 @@ Before it acts, it can ask a predictor what a sequence of actions would do.
 In half of the conditions that predictor has a fixed, systematic error.
 Between tasks the agent keeps a short notebook, and the benchmark compares histories where the notebook is saved with histories where it is wiped.
 
+This repository holds the benchmark code, the 84 task instances of the study, and the per-task results and notebook labels behind the paper *World-Adapt: A Benchmark for Agent Adaptation to Inaccurate World Models* (Princeton COS 597C, 2026).
+
 <table>
   <tr>
     <td align="center"><img src="docs/assets/depot.gif" width="320" alt="Depot"><br>Depot</td>
@@ -15,7 +17,7 @@ Between tasks the agent keeps a short notebook, and the benchmark compares histo
   <tr>
     <td align="center"><img src="docs/assets/switchboard.gif" width="320" alt="Switchboard"><br>Switchboard</td>
     <td align="center"><img src="docs/assets/iceslide.gif" width="320" alt="IceSlide"><br>IceSlide</td>
-    <td align="center"><img src="docs/assets/pusht.gif" width="320" alt="PushT"><br>PushT</td>
+    <td align="center"><img src="docs/assets/pusht.gif" width="320" alt="Push-T"><br>Push-T</td>
   </tr>
 </table>
 
@@ -24,7 +26,7 @@ The red outline marks the first step where the prediction stops matching reality
 
 ## How it works
 
-Each **history** is 14 tasks in one environment: 8 adaptation tasks followed by 6 held-out tasks (two per difficulty tier).
+Each **history** (a *task sequence* in the paper) is 14 tasks in one environment: 8 adaptation tasks followed by 6 held-out tasks (two per difficulty tier).
 On every task the agent has two tools:
 
 - `predict(actions)` rolls the actions forward in a simulator from the current real state and returns the predicted observations.
@@ -33,7 +35,7 @@ On every task the agent has two tools:
 
 The agent receives the goal, a text observation, and a short statement of the true rules.
 Hidden task details, such as where portals lead or which lamps a button toggles, are never shown.
-The real action budget is three times the reference solution length (at least 10, and 40 for PushT), and the prediction budget is twice that.
+The real action budget is three times the reference solution length (at least 10, and 40 for Push-T), and the prediction budget is twice that.
 
 After each task, a separate writer call updates a notebook of at most 2,000 tokens from the public record of the task: the tool calls, the predictions, and the real observations.
 The real environment, the rules, and the predictor stay fixed for the whole history, so anything learned on task 3 still applies on task 13.
@@ -65,7 +67,7 @@ Because each predicted step starts from the previous predicted state, errors com
 | **Patrol** | Reach the exit without meeting guards that walk hidden back-and-forth routes. | Standing next to a guard is reported as a capture, so safe moves look fatal. |
 | **Switchboard** | Turn on every lamp by pressing buttons with hidden wiring; some buttons are breakers that disable another button. | After the first button is disabled, a breaker appears to disable the wrong button. |
 | **IceSlide** | Slide around an icy board and launch crates into sockets. | Launched crates stop one cell early, slide past rough tiles, or fail to lock into sockets. |
-| **PushT** | Push a T-shaped block onto a goal pose with a circular pusher (pymunk physics). | Every push is predicted to reach only 80% of the way to its target. |
+| **Push-T** | Push a T-shaped block onto a goal pose with a circular pusher (pymunk physics). | Every push is predicted to reach only 80% of the way to its target. |
 
 [docs/environments.md](docs/environments.md) describes each environment, its difficulty tiers, and the exact perturbation rules, with a GIF for each.
 To regenerate the GIFs, run `uv run --locked python scripts/render_environment_gifs.py`.
@@ -95,11 +97,12 @@ What we take from it (paired over the same tasks, 95% bootstrap intervals over m
 - **A saved notebook helps with an accurate predictor; with a faulty one we detect no gain.**
   On held-out tasks it adds +6.6 points [+2.8, +10.8] with the accurate predictor and +0.0 [-4.5, +4.9] with the faulty one.
   The difference, -6.6 [-12.5, -0.7], is borderline (permutation p = 0.05).
-- **Agents act on what they learn, but success does not follow.**
+- **A diagnosis changes what agents do, but not whether they succeed.**
   A three-judge Notebook Judge shows that Opus, DeepSeek, Kimi, and Gemma name or locate the perturbed rule in nearly every faulty-predictor history.
-  In Patrol and Depot, where the faulty predictor only raises false alarms, agents whose notebook diagnosed the error execute through 67% of them against 23% without a diagnosis, on held-out tasks too, yet their held-out success does not rise.
+  In Patrol and Depot, where the faulty predictor only raises false alarms, agents whose notebook diagnosed the error execute through 67% of them, against 23% without a diagnosis.
+  On held-out tasks a saved notebook still raises this rate (41% against 30% with a reset one), yet held-out success in these two environments does not rise.
   Weaker models invent errors: Nemotron reports a non-existent predictor error in 10 of its 12 accurate-predictor histories.
-- **Push-T is the hardest environment:** five models solve none of its held-out tasks.
+- **Push-T is the hardest environment:** five models solve none of its held-out tasks in any condition.
 
 Every model has all 336 tasks scored; histories cut short by provider errors were rerun, and lost tasks never count as failures.
 [results/october-2026](results/october-2026) holds the per-task outcomes and the notebook labels behind every number here.
@@ -116,7 +119,7 @@ uv sync --locked
 ```
 
 All six environments run on CPU with no game ROMs or GPUs.
-On a headless Linux machine, PushT needs OpenGL and GLib (`apt-get install libgl1 libglib2.0-0`).
+On a headless Linux machine, Push-T needs OpenGL and GLib (`apt-get install libgl1 libglib2.0-0`).
 On Linux ARM64, `pymunk` builds from source and needs a C compiler (`apt-get install gcc libc6-dev`).
 
 ## Quickstart
@@ -281,3 +284,25 @@ uv run --locked python -m pytest -q
 The suite takes about two minutes and makes no network calls.
 It covers every environment and its perturbation rules, the predictor, the agent loop with scripted model clients, the provider clients, the spend ledger, scheduling and resume, study preparation, and analysis.
 A golden file pins the generated tasks, prompts, and budgets of the full study, so any change to the protocol shows up as a test failure.
+
+## Citation
+
+If you use World-Adapt, please cite:
+
+```bibtex
+@misc{uong2026worldadapt,
+  title        = {World-Adapt: A Benchmark for Agent Adaptation to Inaccurate World Models},
+  author       = {Uong, Caleb Kha and Wang, Brian and Hathaway, Lucas and Narasimhan, Karthik},
+  year         = {2026},
+  howpublished = {\url{https://github.com/zh1kang/world-adapt}}
+}
+```
+
+## Acknowledgments
+
+We thank Seth Karten for valuable feedback, and Modal, SAIL Research and Prime Intellect for the compute credits that made the study possible.
+The Depot domain comes from [PDDLGym](https://github.com/tomsilver/pddlgym) (MIT license, kept in [world_adapt/environments/depot/LICENSE.pddlgym](world_adapt/environments/depot/LICENSE.pddlgym)), and the Push-T task from [gym-pusht](https://github.com/huggingface/gym-pusht).
+
+## License
+
+World-Adapt is released under the [MIT License](LICENSE).

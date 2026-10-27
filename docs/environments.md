@@ -10,7 +10,7 @@ The study uses one faulty profile per environment, its primary profile, named be
 
 In every study run the agent receives a text observation, the goal, and a short statement of the true rules.
 Hidden task parameters, such as portal links, guard routes, and button wiring, are never shown.
-The real action budget is three times the reference solution length (at least 10), except in PushT, which has a fixed budget of 40.
+The real action budget is three times the reference solution length (at least 10), except in Push-T, which has a fixed budget of 40.
 The predicted-transition budget is twice the real budget.
 
 ## Reading the GIFs
@@ -125,11 +125,11 @@ The profile `launch_outcomes` changes how a launched crate ends its slide, with 
 `socket_vertical_no_capture`: a crate launched up or down into an empty socket is predicted to rest there loose instead of being fixed.
 The agent's own slides are predicted correctly.
 
-## PushT
+## Push-T
 
-![PushT](assets/pusht.gif)
+![Push-T](assets/pusht.gif)
 
-PushT is the gym-pusht task: a circular pusher must push a T-shaped block onto a fixed goal pose, simulated with pymunk.
+Push-T is the gym-pusht task: a circular pusher must push a T-shaped block onto a fixed goal pose, simulated with pymunk.
 In the study each action is `move_to <x> <y>`, an absolute pusher target in pixels on the 512 x 512 workspace, which a proportional-derivative controller holds for four control steps, so the pusher may not arrive.
 The observation is text: the pusher position and velocity, the block pose and velocity, the goal pose, a contact count for the last control step, and the percentage of the goal that the block covers.
 The task succeeds when the block covers more than 95% of the goal pose; the real budget is fixed at 40 actions, and there is no exact solver.
